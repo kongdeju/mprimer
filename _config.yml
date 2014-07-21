@@ -12,7 +12,7 @@ navigations:
     class: fa fa-list-ul
     href: /archive.html
   - title: Contact
-    class: fa fa-phone
+    class: fa fa-mobile
     href: /contact.html
   # - title: Blogroll
   #   class: fa fa-link

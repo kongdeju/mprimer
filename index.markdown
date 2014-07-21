@@ -3,49 +3,43 @@ title: "mprimer: a reliable, flexible and high-throughput multiplex PCR primer d
 layout: page
 ---
 
-Multiplex polymerase chain reaction (Multiplex PCR), defined as the simultaneous amplification of multiple regions of a DNA template or multiple DNA templates using more than one primer set (comprising a forward primer and a reverse primer) in one tube, has been widely used in several fields, including: pathogen identification, high throughput SNP genotyping, mutation analysis, gene deletion analysis, template quantitation, linkage analysis, RNA detection, forensic studies etc. The primer design for multiplex PCR is the key step and still remains a major challenge.
+mprimer is a flexible and automatic pipeline for designing singleplex, multiplex, especially high-throughput (100+) multiplex PCR primers. It supports applications like multiple gene amplication at the same time, targets enrighment for next-generation sequencing (NGS), etc.
 
-#### <i class="fa fa-star"></i> Hairpins
+The target of multiplex PCR primer design is finding several primer pairs which can work compatibly in a tube, without hairpins, dimers, nonspecific amplications. Therefore, mprimer uses the cutting-edge research results for primer quality control. Besides, it also implements a flexible and smart algorithm to design thousands of primers automatically. Important features of mprimer including:
 
-Primer hairpins structure.
+#### <i class="fa fa-star"></i> Check hairpins
 
-#### <i class="fa fa-star"></i> Dimers
+The hairpin structure of each primer was checked by thermodynamics. Thermodynamics has been proved to be a more reliable method than sequence alignment algorithm for predicting the oligo hybridization properties, including hairpins, dimers, etc.
 
-Primer-primer dimers, and genome-mediated dimers.
+#### <i class="fa fa-star"></i> Check dimers
 
-#### <i class="fa fa-star"></i> Specificity
+For each two primers in a tube, dimers between them, and thirdparty DNA (other than these two primers) assisted dimers will be check by thermodynamics.
 
-Amplicon-amplicon interaction, background DNAs (e.g. human genome).
+#### <i class="fa fa-star"></i> Check specificity
+
+For each two primers in a tube, nonspecific amplication among amplicons or background DNAs (DNAs other than template sequences, e.g. human genome) will be checked by thermodynamics. [MFEprimer](http://biocompute.bmi.ac.cn/CZlab/MFEprimer-2.0/) is our core product and been widely used in the world.
+
+#### <i class="fa fa-star"></i> Check SNPs
+
+There are two ways for avoiding SNPs sit in the 3'end of primers (e.g. the last 5 base region of a primer): 1) mask the regions before we design primers; 2) Let MFEprimer (version 3.0, not released to public now) check SNPs against the dbSNP database. The first way is fast and the last is suitable for existing primers.
+
+#### <i class="fa fa-star"></i> Virtual electrophoresis
+
+For low-throughput (usually < 20) multiplex PCR primer design, if amplicon size is the key for identifying amplicon, mprimer can control the amplicon size to avoiding the overlap bands.
+
+#### <i class="fa fa-star"></i> Auto-group template sequences into different tubes
+
+In the case of incompatible templates (e.g. high sequence similarity), mprimer can design primers and put them into different tubes.
+
+#### <i class="fa fa-star"></i> Parallel for High-throughput primer design
+
+Genome specificity checking is time-comsuming. It's an impossible mission if we use only single CPU for a 100-plex primer design task. mprimer speeds up by utilizing multiple CPUs of current computers.
 
 
-0. Simulation primer-target binding activity by thermodynamics
-  
-    Thermodynamics has been proved to be a reliable method to predict the oligo hybridization properties.
+---
 
-0. Primer misprimer, self dimers and cross dimers all of them were measured by thermodynamics in MPRIMER
+### How to use?
 
-0. Genome-wide checking the primer specificity and dimers
+Academic users, please go to [mprimer site](http://biocompute.bmi.ac.cn/CZlab/mprimer/).
 
-  A k-mer index algorithm was developed to speed up the binding sites search against the large genome database.
-
-0. Genome-mediated dimers finding algorithm
-
-  Thermodynamics was used to measure the stability of the misprimer and dimers
-
-0. Has a virtual electrophoresis function to predict the mobility of amplicon
-
-  Virtual agarose gel electrophoresis analysis of each amplicon to prevent the overlap bands
-
-0. Designs a flexible plugin mechanism for easily extending the applications of MPRIMER
-
-  With powerful parameters of Primer3, MPRIMER implements a flexible plugin mechanism, which can easily extend the applications of MPRIMER
-
-  For example, with a simple script, users can extend the MPRIMER to design primers for SNP genotyping
-
-0. Auto-groups templates into different tubes when they are incompatible
-
-  In the case of incompatible templates (e.g. due to high sequence similarity), MPRIMER can separate them automatically
-
-0. High-throughput primer design
-
-  The MPRIMER pipeline enables design hundreds of primers automatically without any human interference.
+Commercial users, please contact [me](http://mprimer.net/contact.html) for further information.

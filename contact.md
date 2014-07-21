@@ -1,8 +1,10 @@
 ---
-title: contact
+title: "Contact / 联系方式"
 layout: page
 ---
 
-Wubin Qu
+Wubin Qu (屈武斌)
 
-quwubin@mprimer.net
+<i class="fa fa-mobile"></i> 186-1298-2416
+
+<i class="fa fa-envelope"></i> quwubin@mprimer.net
