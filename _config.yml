@@ -1,0 +1,23 @@
+markdown: kramdown
+highlighter: true
+permalink: /:year/:month/:day/:title.html
+name: "mprimer.net"
+markdown: rdiscount
+
+author: "mprimer.net"
+atom-baseurl: "http://mprimer.net"
+
+navigations:
+  - title: Archive
+    class: fa fa-list-ul
+    href: /archive.html
+  - title: Contact
+    class: fa fa-phone
+    href: /contact.html
+  # - title: Blogroll
+  #   class: fa fa-link
+  #   href: /links.html
+  # - title: Subscribe
+  #   class: fa fa-rss
+  #   href: /atom.xml
+
