@@ -136,7 +136,7 @@ Nucleic Acids Res. 2012 Aug 1;40(15):e115.
 <br>
 The paper is available at
 <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3424584/">http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3424584/</a><br>
-<br>	
+<br>  
 Source code available at <a href="http://sourceforge.net/projects/primer3/">http://sourceforge.net/projects/primer3/</a>.</p>
 
 <h2><a name="licenseExplain">4. FAIR USE OF PRIMER3</a></h2>
@@ -373,7 +373,7 @@ strictly as is; for further documentation please see the code.</p>
     then the test folder<br>
 <br>
 4.  (Optional) Within this folder run:
-	a. 'perl -w p3test.pl'<br>
+  a. 'perl -w p3test.pl'<br>
 <br>
 5.  (Optional) You should not see 'FAILED' during the tests.<br>
 <br>
@@ -381,13 +381,13 @@ strictly as is; for further documentation please see the code.</p>
     perl (for example, if it is called perl5) you will have 
     to modify the internals of the test scripts).<br>
 <br>
-7.	Copy the following files to a location of your choice:<br>
-	a.  bin/long_seq_tm_test<br>
-	b.  bin/ntdpal<br>
-	c.  bin/oligotm<br>
-	d.  bin/primer3_core<br>
+7.  Copy the following files to a location of your choice:<br>
+  a.  bin/long_seq_tm_test<br>
+  b.  bin/ntdpal<br>
+  c.  bin/oligotm<br>
+  d.  bin/primer3_core<br>
 <br>
-8.	(Optional) Make sure this location is within your $PATH 
+8.  (Optional) Make sure this location is within your $PATH 
     (see below)<br>
 <br>
 <br>
@@ -425,29 +425,29 @@ not need to do this.<br>
 If you added the binaries to a local directory (let's say 
 ~/bin/), do the following:<br>
 <br>
-	1.  Edit your ~/.bash_profile.  You can edit this on 
+  1.  Edit your ~/.bash_profile.  You can edit this on 
         the command line (Terminal) with:<br>
 <br>
-		nano ~/.bash_profile<br>
+    nano ~/.bash_profile<br>
 <br>
-	2. Add the following line if it is not present 
+  2. Add the following line if it is not present 
        (replacing '~/bin' if you used another directory):<br>
 <br>
-		PATH=$PATH:~/bin/<br>
+    PATH=$PATH:~/bin/<br>
 <br>
-	3. If a PATH line *is* present, ensure you add a colon 
+  3. If a PATH line *is* present, ensure you add a colon 
        to the end of what is there and then the directory, 
        so if you have something like:<br>
 <br>
-		a) PATH=$PATH:/usr/local/genome/bin:/sw/bin<br>
+    a) PATH=$PATH:/usr/local/genome/bin:/sw/bin<br>
 <br>
        make it look like:<br>
 <br>
-		b) PATH=$PATH:/usr/local/genome/bin:/sw/bin:~/bin<br>
+    b) PATH=$PATH:/usr/local/genome/bin:/sw/bin:~/bin<br>
 <br>
-	4. Quit and restart terminal for the changes to take 
+  4. Quit and restart terminal for the changes to take 
        effect.<br>
-<br>	
+<br>  
 If you don't add the location to your $PATH<br>
 ===========================================<br>
 <br>
@@ -456,8 +456,8 @@ run the binaries.  Let's assume you put the files in
 '~/bin/.  You may run primer3_core by doing either of the 
 following:<br>
 <br>
-	1. ~/bin/primer3_core &lt; yourInputFile<br>
-	2. /Users/&lt;your username&gt;/bin/primer3_core < yourInputFile<br>
+  1. ~/bin/primer3_core &lt; yourInputFile<br>
+  2. /Users/&lt;your username&gt;/bin/primer3_core < yourInputFile<br>
 <br>
 The first option is just a shortcut to the second.</p>
 
@@ -570,7 +570,7 @@ registering for a free account), you can compile a universal
 build (Intel and PPC native) of primer3.<br>
 <br>
 o you must be running OS X > 10.4 and should have the most
-	recent version of XCode<br>
+  recent version of XCode<br>
 o run `make -f Makefile.OSX.Leopard all` if you run OS X 10.5<br>
 o run `make -f Makefile.OSX.Tiger all` is you run OS X 10.4<br>
 o run the tests as directed above<br>
@@ -664,7 +664,7 @@ this argument will have no effect.</p>
 <h3>-io_version=n</h3>
 <p>This argument is provided for backward compatibility.
 -io_version=4 <strong>is the only legal value and the default</strong>.
-	</description>
+  </description>
 </tag>
 
 <tag>
@@ -1055,36 +1055,36 @@ Boulder record. Errors in "Sequence" input tags invalidate the
 current record, but primer3 will continue to process additional 
 records.</p>
 <table style="text-align: left; width: 800px;" border="1">
-	  <tr>
-	    <td><a href="#SEQUENCE_EXCLUDED_REGION">SEQUENCE_EXCLUDED_REGION</a></td>
-	    <td><a href="#SEQUENCE_INCLUDED_REGION">SEQUENCE_INCLUDED_REGION</a></td>
-	    <td><a href="#SEQUENCE_PRIMER_REVCOMP">SEQUENCE_PRIMER_REVCOMP</a></td>
-	  </tr>
-	  <tr>
-	    <td><a href="#SEQUENCE_FORCE_LEFT_END">SEQUENCE_FORCE_LEFT_END</a></td>
-	    <td><a href="#SEQUENCE_INTERNAL_EXCLUDED_REGION">SEQUENCE_INTERNAL_EXCLUDED_REGION</a></td>
-	    <td><a href="#SEQUENCE_QUALITY">SEQUENCE_QUALITY</a></td>
-	  </tr>
-	  <tr>
-	    <td><a href="#SEQUENCE_FORCE_LEFT_START">SEQUENCE_FORCE_LEFT_START</a></td>
-	    <td><a href="#SEQUENCE_INTERNAL_OLIGO">SEQUENCE_INTERNAL_OLIGO</a></td>
-	    <td><a href="#SEQUENCE_START_CODON_POSITION">SEQUENCE_START_CODON_POSITION</a></td>
-	  </tr>
-	  <tr>
-	    <td><a href="#SEQUENCE_FORCE_RIGHT_END">SEQUENCE_FORCE_RIGHT_END</a></td>
-	    <td><a href="#SEQUENCE_OVERLAP_JUNCTION_LIST">SEQUENCE_OVERLAP_JUNCTION_LIST</a></td>
-	    <td><a href="#SEQUENCE_TARGET">SEQUENCE_TARGET</a></td>
-	  </tr>
-	  <tr>
-	    <td><a href="#SEQUENCE_FORCE_RIGHT_START">SEQUENCE_FORCE_RIGHT_START</a></td>
-	    <td><a href="#SEQUENCE_PRIMER">SEQUENCE_PRIMER</a></td>
-	    <td><a href="#SEQUENCE_TEMPLATE">SEQUENCE_TEMPLATE</a></td>
-	  </tr>
-	  <tr>
-	    <td><a href="#SEQUENCE_ID">SEQUENCE_ID</a></td>
-	    <td><a href="#SEQUENCE_PRIMER_PAIR_OK_REGION_LIST">SEQUENCE_PRIMER_PAIR_OK_REGION_LIST</a></td>
-	    <td>&nbsp;</td>
-	  </tr>
+    <tr>
+      <td><a href="#SEQUENCE_EXCLUDED_REGION">SEQUENCE_EXCLUDED_REGION</a></td>
+      <td><a href="#SEQUENCE_INCLUDED_REGION">SEQUENCE_INCLUDED_REGION</a></td>
+      <td><a href="#SEQUENCE_PRIMER_REVCOMP">SEQUENCE_PRIMER_REVCOMP</a></td>
+    </tr>
+    <tr>
+      <td><a href="#SEQUENCE_FORCE_LEFT_END">SEQUENCE_FORCE_LEFT_END</a></td>
+      <td><a href="#SEQUENCE_INTERNAL_EXCLUDED_REGION">SEQUENCE_INTERNAL_EXCLUDED_REGION</a></td>
+      <td><a href="#SEQUENCE_QUALITY">SEQUENCE_QUALITY</a></td>
+    </tr>
+    <tr>
+      <td><a href="#SEQUENCE_FORCE_LEFT_START">SEQUENCE_FORCE_LEFT_START</a></td>
+      <td><a href="#SEQUENCE_INTERNAL_OLIGO">SEQUENCE_INTERNAL_OLIGO</a></td>
+      <td><a href="#SEQUENCE_START_CODON_POSITION">SEQUENCE_START_CODON_POSITION</a></td>
+    </tr>
+    <tr>
+      <td><a href="#SEQUENCE_FORCE_RIGHT_END">SEQUENCE_FORCE_RIGHT_END</a></td>
+      <td><a href="#SEQUENCE_OVERLAP_JUNCTION_LIST">SEQUENCE_OVERLAP_JUNCTION_LIST</a></td>
+      <td><a href="#SEQUENCE_TARGET">SEQUENCE_TARGET</a></td>
+    </tr>
+    <tr>
+      <td><a href="#SEQUENCE_FORCE_RIGHT_START">SEQUENCE_FORCE_RIGHT_START</a></td>
+      <td><a href="#SEQUENCE_PRIMER">SEQUENCE_PRIMER</a></td>
+      <td><a href="#SEQUENCE_TEMPLATE">SEQUENCE_TEMPLATE</a></td>
+    </tr>
+    <tr>
+      <td><a href="#SEQUENCE_ID">SEQUENCE_ID</a></td>
+      <td><a href="#SEQUENCE_PRIMER_PAIR_OK_REGION_LIST">SEQUENCE_PRIMER_PAIR_OK_REGION_LIST</a></td>
+      <td>&nbsp;</td>
+    </tr>
 </table>
 <h3><a name="SEQUENCE_ID">SEQUENCE_ID (string; default empty)</a></h3>
 
@@ -1357,251 +1357,251 @@ temperature of an oligo used for hybridization might be
 considerably lower than that used as a PCR primer.
 <br></p>
 <table style="text-align: left; width: 800px;" border="1">
-	  <tr>
-	    <td><a href="#PRIMER_DNA_CONC">PRIMER_DNA_CONC</a></td>
-	    <td><a href="#PRIMER_MAX_END_GC">PRIMER_MAX_END_GC</a></td>
-	    <td><a href="#PRIMER_PAIR_WT_PRODUCT_SIZE_LT">PRIMER_PAIR_WT_PRODUCT_SIZE_LT</a></td>
-	  </tr>
-	  <tr>
-	    <td><a href="#PRIMER_DNTP_CONC">PRIMER_DNTP_CONC</a></td>
-	    <td><a href="#PRIMER_MAX_END_STABILITY">PRIMER_MAX_END_STABILITY</a></td>
-	    <td><a href="#PRIMER_PAIR_WT_PRODUCT_TM_GT">PRIMER_PAIR_WT_PRODUCT_TM_GT</a></td>
-	  </tr>
-	  <tr>
-	    <td><a href="#PRIMER_EXPLAIN_FLAG">PRIMER_EXPLAIN_FLAG</a></td>
-	    <td><a href="#PRIMER_MAX_GC">PRIMER_MAX_GC</a></td>
-	    <td><a href="#PRIMER_PAIR_WT_PRODUCT_TM_LT">PRIMER_PAIR_WT_PRODUCT_TM_LT</a></td>
-	  </tr>
-	  <tr>
-	    <td><a href="#PRIMER_FIRST_BASE_INDEX">PRIMER_FIRST_BASE_INDEX</a></td>
-	    <td><a href="#PRIMER_MAX_HAIRPIN_TH">PRIMER_MAX_HAIRPIN_TH</a></td>
-	    <td><a href="#PRIMER_PAIR_WT_PR_PENALTY">PRIMER_PAIR_WT_PR_PENALTY</a></td>
-	  </tr>
-	  <tr>
-	    <td><a href="#PRIMER_GC_CLAMP">PRIMER_GC_CLAMP</a></td>
-	    <td><a href="#PRIMER_MAX_LIBRARY_MISPRIMING">PRIMER_MAX_LIBRARY_MISPRIMING</a></td>
-	    <td><a href="#PRIMER_PAIR_WT_TEMPLATE_MISPRIMING">PRIMER_PAIR_WT_TEMPLATE_MISPRIMING</a></td>
-	  </tr>
-	  <tr>
-	    <td><a href="#PRIMER_INSIDE_PENALTY">PRIMER_INSIDE_PENALTY</a></td>
-	    <td><a href="#PRIMER_MAX_NS_ACCEPTED">PRIMER_MAX_NS_ACCEPTED</a></td>
-	    <td><a href="#PRIMER_PAIR_WT_TEMPLATE_MISPRIMING_TH">PRIMER_PAIR_WT_TEMPLATE_MISPRIMING_TH</a></td>
-	  </tr>
-	  <tr>
-	    <td><a href="#PRIMER_INTERNAL_DNA_CONC">PRIMER_INTERNAL_DNA_CONC</a></td>
-	    <td><a href="#PRIMER_MAX_POLY_X">PRIMER_MAX_POLY_X</a></td>
-	    <td><a href="#PRIMER_PICK_ANYWAY">PRIMER_PICK_ANYWAY</a></td>
-	  </tr>
-	  <tr>
-	    <td><a href="#PRIMER_INTERNAL_DNTP_CONC">PRIMER_INTERNAL_DNTP_CONC</a></td>
-	    <td><a href="#PRIMER_MAX_SELF_ANY">PRIMER_MAX_SELF_ANY</a></td>
-	    <td><a href="#PRIMER_PICK_INTERNAL_OLIGO">PRIMER_PICK_INTERNAL_OLIGO</a></td>
-	  </tr>
-	  <tr>
-	    <td><a href="#PRIMER_INTERNAL_MAX_GC">PRIMER_INTERNAL_MAX_GC</a></td>
-	    <td><a href="#PRIMER_MAX_SELF_ANY_TH">PRIMER_MAX_SELF_ANY_TH</a></td>
-	    <td><a href="#PRIMER_PICK_LEFT_PRIMER">PRIMER_PICK_LEFT_PRIMER</a></td>
-	  </tr>
-	  <tr>
-	    <td><a href="#PRIMER_INTERNAL_MAX_HAIRPIN_TH">PRIMER_INTERNAL_MAX_HAIRPIN_TH</a></td>
-	    <td><a href="#PRIMER_MAX_SELF_END">PRIMER_MAX_SELF_END</a></td>
-	    <td><a href="#PRIMER_PICK_RIGHT_PRIMER">PRIMER_PICK_RIGHT_PRIMER</a></td>
-	  </tr>
-	  <tr>
-	    <td><a href="#PRIMER_INTERNAL_MAX_LIBRARY_MISHYB">PRIMER_INTERNAL_MAX_LIBRARY_MISHYB</a></td>
-	    <td><a href="#PRIMER_MAX_SELF_END_TH">PRIMER_MAX_SELF_END_TH</a></td>
-	    <td><a href="#PRIMER_PRODUCT_MAX_TM">PRIMER_PRODUCT_MAX_TM</a></td>
-	  </tr>
-	  <tr>
-	    <td><a href="#PRIMER_INTERNAL_MAX_NS_ACCEPTED">PRIMER_INTERNAL_MAX_NS_ACCEPTED</a></td>
-	    <td><a href="#PRIMER_MAX_SIZE">PRIMER_MAX_SIZE</a></td>
-	    <td><a href="#PRIMER_PRODUCT_MIN_TM">PRIMER_PRODUCT_MIN_TM</a></td>
-	  </tr>
-	  <tr>
-	    <td><a href="#PRIMER_INTERNAL_MAX_POLY_X">PRIMER_INTERNAL_MAX_POLY_X</a></td>
-	    <td><a href="#PRIMER_MAX_TEMPLATE_MISPRIMING">PRIMER_MAX_TEMPLATE_MISPRIMING</a></td>
-	    <td><a href="#PRIMER_PRODUCT_OPT_SIZE">PRIMER_PRODUCT_OPT_SIZE</a></td>
-	  </tr>
-	  <tr>
-	    <td><a href="#PRIMER_INTERNAL_MAX_SELF_ANY">PRIMER_INTERNAL_MAX_SELF_ANY</a></td>
-	    <td><a href="#PRIMER_MAX_TEMPLATE_MISPRIMING_TH">PRIMER_MAX_TEMPLATE_MISPRIMING_TH</a></td>
-	    <td><a href="#PRIMER_PRODUCT_OPT_TM">PRIMER_PRODUCT_OPT_TM</a></td>
-	  </tr>
-	  <tr>
-	    <td><a href="#PRIMER_INTERNAL_MAX_SELF_ANY_TH">PRIMER_INTERNAL_MAX_SELF_ANY_TH</a></td>
-	    <td><a href="#PRIMER_MAX_TM">PRIMER_MAX_TM</a></td>
-	    <td><a href="#PRIMER_PRODUCT_SIZE_RANGE">PRIMER_PRODUCT_SIZE_RANGE</a></td>
-	  </tr>
-	  <tr>
-	    <td><a href="#PRIMER_INTERNAL_MAX_SELF_END">PRIMER_INTERNAL_MAX_SELF_END</a></td>
-	    <td><a href="#PRIMER_MIN_3_PRIME_OVERLAP_OF_JUNCTION">PRIMER_MIN_3_PRIME_OVERLAP_OF_JUNCTION</a></td>
-	    <td><a href="#PRIMER_QUALITY_RANGE_MAX">PRIMER_QUALITY_RANGE_MAX</a></td>
-	  </tr>
-	  <tr>
-	    <td><a href="#PRIMER_INTERNAL_MAX_SELF_END_TH">PRIMER_INTERNAL_MAX_SELF_END_TH</a></td>
-	    <td><a href="#PRIMER_MIN_5_PRIME_OVERLAP_OF_JUNCTION">PRIMER_MIN_5_PRIME_OVERLAP_OF_JUNCTION</a></td>
-	    <td><a href="#PRIMER_QUALITY_RANGE_MIN">PRIMER_QUALITY_RANGE_MIN</a></td>
-	  </tr>
-	  <tr>
-	    <td><a href="#PRIMER_INTERNAL_MAX_SIZE">PRIMER_INTERNAL_MAX_SIZE</a></td>
-	    <td><a href="#PRIMER_MIN_END_QUALITY">PRIMER_MIN_END_QUALITY</a></td>
-	    <td><a href="#PRIMER_SALT_CORRECTIONS">PRIMER_SALT_CORRECTIONS</a></td>
-	  </tr>
-	  <tr>
-	    <td><a href="#PRIMER_INTERNAL_MAX_TM">PRIMER_INTERNAL_MAX_TM</a></td>
-	    <td><a href="#PRIMER_MIN_GC">PRIMER_MIN_GC</a></td>
-	    <td><a href="#PRIMER_SALT_DIVALENT">PRIMER_SALT_DIVALENT</a></td>
-	  </tr>
-	  <tr>
-	    <td><a href="#PRIMER_INTERNAL_MIN_GC">PRIMER_INTERNAL_MIN_GC</a></td>
-	    <td><a href="#PRIMER_MIN_LEFT_THREE_PRIME_DISTANCE">PRIMER_MIN_LEFT_THREE_PRIME_DISTANCE</a></td>
-	    <td><a href="#PRIMER_SALT_MONOVALENT">PRIMER_SALT_MONOVALENT</a></td>
-	  </tr>
-	  <tr>
-	    <td><a href="#PRIMER_INTERNAL_MIN_QUALITY">PRIMER_INTERNAL_MIN_QUALITY</a></td>
-	    <td><a href="#PRIMER_MIN_QUALITY">PRIMER_MIN_QUALITY</a></td>
-	    <td><a href="#PRIMER_SEQUENCING_ACCURACY">PRIMER_SEQUENCING_ACCURACY</a></td>
-	  </tr>
-	  <tr>
-	    <td><a href="#PRIMER_INTERNAL_MIN_SIZE">PRIMER_INTERNAL_MIN_SIZE</a></td>
-	    <td><a href="#PRIMER_MIN_RIGHT_THREE_PRIME_DISTANCE">PRIMER_MIN_RIGHT_THREE_PRIME_DISTANCE</a></td>
-	    <td><a href="#PRIMER_SEQUENCING_INTERVAL">PRIMER_SEQUENCING_INTERVAL</a></td>
-	  </tr>
-	  <tr>
-	    <td><a href="#PRIMER_INTERNAL_MIN_TM">PRIMER_INTERNAL_MIN_TM</a></td>
-	    <td><a href="#PRIMER_MIN_SIZE">PRIMER_MIN_SIZE</a></td>
-	    <td><a href="#PRIMER_SEQUENCING_LEAD">PRIMER_SEQUENCING_LEAD</a></td>
-	  </tr>
-	  <tr>
-	    <td><a href="#PRIMER_INTERNAL_MISHYB_LIBRARY">PRIMER_INTERNAL_MISHYB_LIBRARY</a></td>
-	    <td><a href="#PRIMER_MIN_THREE_PRIME_DISTANCE">PRIMER_MIN_THREE_PRIME_DISTANCE</a></td>
-	    <td><a href="#PRIMER_SEQUENCING_SPACING">PRIMER_SEQUENCING_SPACING</a></td>
-	  </tr>
-	  <tr>
-	    <td><a href="#PRIMER_INTERNAL_MUST_MATCH_FIVE_PRIME">PRIMER_INTERNAL_MUST_MATCH_FIVE_PRIME</a></td>
-	    <td><a href="#PRIMER_MIN_TM">PRIMER_MIN_TM</a></td>
-	    <td><a href="#PRIMER_TASK">PRIMER_TASK</a></td>
-	  </tr>
-	  <tr>
-	    <td><a href="#PRIMER_INTERNAL_MUST_MATCH_THREE_PRIME">PRIMER_INTERNAL_MUST_MATCH_THREE_PRIME</a></td>
-	    <td><a href="#PRIMER_MISPRIMING_LIBRARY">PRIMER_MISPRIMING_LIBRARY</a></td>
-	    <td><a href="#PRIMER_THERMODYNAMIC_OLIGO_ALIGNMENT">PRIMER_THERMODYNAMIC_OLIGO_ALIGNMENT</a></td>
-	  </tr>
-	  <tr>
-	    <td><a href="#PRIMER_INTERNAL_OPT_GC_PERCENT">PRIMER_INTERNAL_OPT_GC_PERCENT</a></td>
-	    <td><a href="#PRIMER_MUST_MATCH_FIVE_PRIME">PRIMER_MUST_MATCH_FIVE_PRIME</a></td>
-	    <td><a href="#PRIMER_THERMODYNAMIC_PARAMETERS_PATH">PRIMER_THERMODYNAMIC_PARAMETERS_PATH</a></td>
-	  </tr>
-	  <tr>
-	    <td><a href="#PRIMER_INTERNAL_OPT_SIZE">PRIMER_INTERNAL_OPT_SIZE</a></td>
-	    <td><a href="#PRIMER_MUST_MATCH_THREE_PRIME">PRIMER_MUST_MATCH_THREE_PRIME</a></td>
-	    <td><a href="#PRIMER_THERMODYNAMIC_TEMPLATE_ALIGNMENT">PRIMER_THERMODYNAMIC_TEMPLATE_ALIGNMENT</a></td>
-	  </tr>
-	  <tr>
-	    <td><a href="#PRIMER_INTERNAL_OPT_TM">PRIMER_INTERNAL_OPT_TM</a></td>
-	    <td><a href="#PRIMER_NUM_RETURN">PRIMER_NUM_RETURN</a></td>
-	    <td><a href="#PRIMER_TM_FORMULA">PRIMER_TM_FORMULA</a></td>
-	  </tr>
-	  <tr>
-	    <td><a href="#PRIMER_INTERNAL_SALT_DIVALENT">PRIMER_INTERNAL_SALT_DIVALENT</a></td>
-	    <td><a href="#PRIMER_OPT_GC_PERCENT">PRIMER_OPT_GC_PERCENT</a></td>
-	    <td><a href="#PRIMER_WT_END_QUAL">PRIMER_WT_END_QUAL</a></td>
-	  </tr>
-	  <tr>
-	    <td><a href="#PRIMER_INTERNAL_SALT_MONOVALENT">PRIMER_INTERNAL_SALT_MONOVALENT</a></td>
-	    <td><a href="#PRIMER_OPT_SIZE">PRIMER_OPT_SIZE</a></td>
-	    <td><a href="#PRIMER_WT_END_STABILITY">PRIMER_WT_END_STABILITY</a></td>
-	  </tr>
-	  <tr>
-	    <td><a href="#PRIMER_INTERNAL_WT_END_QUAL">PRIMER_INTERNAL_WT_END_QUAL</a></td>
-	    <td><a href="#PRIMER_OPT_TM">PRIMER_OPT_TM</a></td>
-	    <td><a href="#PRIMER_WT_GC_PERCENT_GT">PRIMER_WT_GC_PERCENT_GT</a></td>
-	  </tr>
-	  <tr>
-	    <td><a href="#PRIMER_INTERNAL_WT_GC_PERCENT_GT">PRIMER_INTERNAL_WT_GC_PERCENT_GT</a></td>
-	    <td><a href="#PRIMER_OUTSIDE_PENALTY">PRIMER_OUTSIDE_PENALTY</a></td>
-	    <td><a href="#PRIMER_WT_GC_PERCENT_LT">PRIMER_WT_GC_PERCENT_LT</a></td>
-	  </tr>
-	  <tr>
-	    <td><a href="#PRIMER_INTERNAL_WT_GC_PERCENT_LT">PRIMER_INTERNAL_WT_GC_PERCENT_LT</a></td>
-	    <td><a href="#PRIMER_PAIR_MAX_COMPL_ANY">PRIMER_PAIR_MAX_COMPL_ANY</a></td>
-	    <td><a href="#PRIMER_WT_HAIRPIN_TH">PRIMER_WT_HAIRPIN_TH</a></td>
-	  </tr>
-	  <tr>
-	    <td><a href="#PRIMER_INTERNAL_WT_HAIRPIN_TH">PRIMER_INTERNAL_WT_HAIRPIN_TH</a></td>
-	    <td><a href="#PRIMER_PAIR_MAX_COMPL_ANY_TH">PRIMER_PAIR_MAX_COMPL_ANY_TH</a></td>
-	    <td><a href="#PRIMER_WT_LIBRARY_MISPRIMING">PRIMER_WT_LIBRARY_MISPRIMING</a></td>
-	  </tr>
-	  <tr>
-	    <td><a href="#PRIMER_INTERNAL_WT_LIBRARY_MISHYB">PRIMER_INTERNAL_WT_LIBRARY_MISHYB</a></td>
-	    <td><a href="#PRIMER_PAIR_MAX_COMPL_END">PRIMER_PAIR_MAX_COMPL_END</a></td>
-	    <td><a href="#PRIMER_WT_NUM_NS">PRIMER_WT_NUM_NS</a></td>
-	  </tr>
-	  <tr>
-	    <td><a href="#PRIMER_INTERNAL_WT_NUM_NS">PRIMER_INTERNAL_WT_NUM_NS</a></td>
-	    <td><a href="#PRIMER_PAIR_MAX_COMPL_END_TH">PRIMER_PAIR_MAX_COMPL_END_TH</a></td>
-	    <td><a href="#PRIMER_WT_POS_PENALTY">PRIMER_WT_POS_PENALTY</a></td>
-	  </tr>
-	  <tr>
-	    <td><a href="#PRIMER_INTERNAL_WT_SELF_ANY">PRIMER_INTERNAL_WT_SELF_ANY</a></td>
-	    <td><a href="#PRIMER_PAIR_MAX_DIFF_TM">PRIMER_PAIR_MAX_DIFF_TM</a></td>
-	    <td><a href="#PRIMER_WT_SELF_ANY">PRIMER_WT_SELF_ANY</a></td>
-	  </tr>
-	  <tr>
-	    <td><a href="#PRIMER_INTERNAL_WT_SELF_ANY_TH">PRIMER_INTERNAL_WT_SELF_ANY_TH</a></td>
-	    <td><a href="#PRIMER_PAIR_MAX_LIBRARY_MISPRIMING">PRIMER_PAIR_MAX_LIBRARY_MISPRIMING</a></td>
-	    <td><a href="#PRIMER_WT_SELF_ANY_TH">PRIMER_WT_SELF_ANY_TH</a></td>
-	  </tr>
-	  <tr>
-	    <td><a href="#PRIMER_INTERNAL_WT_SELF_END">PRIMER_INTERNAL_WT_SELF_END</a></td>
-	    <td><a href="#PRIMER_PAIR_MAX_TEMPLATE_MISPRIMING">PRIMER_PAIR_MAX_TEMPLATE_MISPRIMING</a></td>
-	    <td><a href="#PRIMER_WT_SELF_END">PRIMER_WT_SELF_END</a></td>
-	  </tr>
-	  <tr>
-	    <td><a href="#PRIMER_INTERNAL_WT_SELF_END_TH">PRIMER_INTERNAL_WT_SELF_END_TH</a></td>
-	    <td><a href="#PRIMER_PAIR_MAX_TEMPLATE_MISPRIMING_TH">PRIMER_PAIR_MAX_TEMPLATE_MISPRIMING_TH</a></td>
-	    <td><a href="#PRIMER_WT_SELF_END_TH">PRIMER_WT_SELF_END_TH</a></td>
-	  </tr>
-	  <tr>
-	    <td><a href="#PRIMER_INTERNAL_WT_SEQ_QUAL">PRIMER_INTERNAL_WT_SEQ_QUAL</a></td>
-	    <td><a href="#PRIMER_PAIR_WT_COMPL_ANY">PRIMER_PAIR_WT_COMPL_ANY</a></td>
-	    <td><a href="#PRIMER_WT_SEQ_QUAL">PRIMER_WT_SEQ_QUAL</a></td>
-	  </tr>
-	  <tr>
-	    <td><a href="#PRIMER_INTERNAL_WT_SIZE_GT">PRIMER_INTERNAL_WT_SIZE_GT</a></td>
-	    <td><a href="#PRIMER_PAIR_WT_COMPL_ANY_TH">PRIMER_PAIR_WT_COMPL_ANY_TH</a></td>
-	    <td><a href="#PRIMER_WT_SIZE_GT">PRIMER_WT_SIZE_GT</a></td>
-	  </tr>
-	  <tr>
-	    <td><a href="#PRIMER_INTERNAL_WT_SIZE_LT">PRIMER_INTERNAL_WT_SIZE_LT</a></td>
-	    <td><a href="#PRIMER_PAIR_WT_COMPL_END">PRIMER_PAIR_WT_COMPL_END</a></td>
-	    <td><a href="#PRIMER_WT_SIZE_LT">PRIMER_WT_SIZE_LT</a></td>
-	  </tr>
-	  <tr>
-	    <td><a href="#PRIMER_INTERNAL_WT_TM_GT">PRIMER_INTERNAL_WT_TM_GT</a></td>
-	    <td><a href="#PRIMER_PAIR_WT_COMPL_END_TH">PRIMER_PAIR_WT_COMPL_END_TH</a></td>
-	    <td><a href="#PRIMER_WT_TEMPLATE_MISPRIMING">PRIMER_WT_TEMPLATE_MISPRIMING</a></td>
-	  </tr>
-	  <tr>
-	    <td><a href="#PRIMER_INTERNAL_WT_TM_LT">PRIMER_INTERNAL_WT_TM_LT</a></td>
-	    <td><a href="#PRIMER_PAIR_WT_DIFF_TM">PRIMER_PAIR_WT_DIFF_TM</a></td>
-	    <td><a href="#PRIMER_WT_TEMPLATE_MISPRIMING_TH">PRIMER_WT_TEMPLATE_MISPRIMING_TH</a></td>
-	  </tr>
-	  <tr>
-	    <td><a href="#PRIMER_LIBERAL_BASE">PRIMER_LIBERAL_BASE</a></td>
-	    <td><a href="#PRIMER_PAIR_WT_IO_PENALTY">PRIMER_PAIR_WT_IO_PENALTY</a></td>
-	    <td><a href="#PRIMER_WT_TM_GT">PRIMER_WT_TM_GT</a></td>
-	  </tr>
-	  <tr>
-	    <td><a href="#PRIMER_LIB_AMBIGUITY_CODES_CONSENSUS">PRIMER_LIB_AMBIGUITY_CODES_CONSENSUS</a></td>
-	    <td><a href="#PRIMER_PAIR_WT_LIBRARY_MISPRIMING">PRIMER_PAIR_WT_LIBRARY_MISPRIMING</a></td>
-	    <td><a href="#PRIMER_WT_TM_LT">PRIMER_WT_TM_LT</a></td>
-	  </tr>
-	  <tr>
-	    <td><a href="#PRIMER_LOWERCASE_MASKING">PRIMER_LOWERCASE_MASKING</a></td>
-	    <td><a href="#PRIMER_PAIR_WT_PRODUCT_SIZE_GT">PRIMER_PAIR_WT_PRODUCT_SIZE_GT</a></td>
-	    <td>&nbsp;</td>
-	  </tr>
+    <tr>
+      <td><a href="#PRIMER_DNA_CONC">PRIMER_DNA_CONC</a></td>
+      <td><a href="#PRIMER_MAX_END_GC">PRIMER_MAX_END_GC</a></td>
+      <td><a href="#PRIMER_PAIR_WT_PRODUCT_SIZE_LT">PRIMER_PAIR_WT_PRODUCT_SIZE_LT</a></td>
+    </tr>
+    <tr>
+      <td><a href="#PRIMER_DNTP_CONC">PRIMER_DNTP_CONC</a></td>
+      <td><a href="#PRIMER_MAX_END_STABILITY">PRIMER_MAX_END_STABILITY</a></td>
+      <td><a href="#PRIMER_PAIR_WT_PRODUCT_TM_GT">PRIMER_PAIR_WT_PRODUCT_TM_GT</a></td>
+    </tr>
+    <tr>
+      <td><a href="#PRIMER_EXPLAIN_FLAG">PRIMER_EXPLAIN_FLAG</a></td>
+      <td><a href="#PRIMER_MAX_GC">PRIMER_MAX_GC</a></td>
+      <td><a href="#PRIMER_PAIR_WT_PRODUCT_TM_LT">PRIMER_PAIR_WT_PRODUCT_TM_LT</a></td>
+    </tr>
+    <tr>
+      <td><a href="#PRIMER_FIRST_BASE_INDEX">PRIMER_FIRST_BASE_INDEX</a></td>
+      <td><a href="#PRIMER_MAX_HAIRPIN_TH">PRIMER_MAX_HAIRPIN_TH</a></td>
+      <td><a href="#PRIMER_PAIR_WT_PR_PENALTY">PRIMER_PAIR_WT_PR_PENALTY</a></td>
+    </tr>
+    <tr>
+      <td><a href="#PRIMER_GC_CLAMP">PRIMER_GC_CLAMP</a></td>
+      <td><a href="#PRIMER_MAX_LIBRARY_MISPRIMING">PRIMER_MAX_LIBRARY_MISPRIMING</a></td>
+      <td><a href="#PRIMER_PAIR_WT_TEMPLATE_MISPRIMING">PRIMER_PAIR_WT_TEMPLATE_MISPRIMING</a></td>
+    </tr>
+    <tr>
+      <td><a href="#PRIMER_INSIDE_PENALTY">PRIMER_INSIDE_PENALTY</a></td>
+      <td><a href="#PRIMER_MAX_NS_ACCEPTED">PRIMER_MAX_NS_ACCEPTED</a></td>
+      <td><a href="#PRIMER_PAIR_WT_TEMPLATE_MISPRIMING_TH">PRIMER_PAIR_WT_TEMPLATE_MISPRIMING_TH</a></td>
+    </tr>
+    <tr>
+      <td><a href="#PRIMER_INTERNAL_DNA_CONC">PRIMER_INTERNAL_DNA_CONC</a></td>
+      <td><a href="#PRIMER_MAX_POLY_X">PRIMER_MAX_POLY_X</a></td>
+      <td><a href="#PRIMER_PICK_ANYWAY">PRIMER_PICK_ANYWAY</a></td>
+    </tr>
+    <tr>
+      <td><a href="#PRIMER_INTERNAL_DNTP_CONC">PRIMER_INTERNAL_DNTP_CONC</a></td>
+      <td><a href="#PRIMER_MAX_SELF_ANY">PRIMER_MAX_SELF_ANY</a></td>
+      <td><a href="#PRIMER_PICK_INTERNAL_OLIGO">PRIMER_PICK_INTERNAL_OLIGO</a></td>
+    </tr>
+    <tr>
+      <td><a href="#PRIMER_INTERNAL_MAX_GC">PRIMER_INTERNAL_MAX_GC</a></td>
+      <td><a href="#PRIMER_MAX_SELF_ANY_TH">PRIMER_MAX_SELF_ANY_TH</a></td>
+      <td><a href="#PRIMER_PICK_LEFT_PRIMER">PRIMER_PICK_LEFT_PRIMER</a></td>
+    </tr>
+    <tr>
+      <td><a href="#PRIMER_INTERNAL_MAX_HAIRPIN_TH">PRIMER_INTERNAL_MAX_HAIRPIN_TH</a></td>
+      <td><a href="#PRIMER_MAX_SELF_END">PRIMER_MAX_SELF_END</a></td>
+      <td><a href="#PRIMER_PICK_RIGHT_PRIMER">PRIMER_PICK_RIGHT_PRIMER</a></td>
+    </tr>
+    <tr>
+      <td><a href="#PRIMER_INTERNAL_MAX_LIBRARY_MISHYB">PRIMER_INTERNAL_MAX_LIBRARY_MISHYB</a></td>
+      <td><a href="#PRIMER_MAX_SELF_END_TH">PRIMER_MAX_SELF_END_TH</a></td>
+      <td><a href="#PRIMER_PRODUCT_MAX_TM">PRIMER_PRODUCT_MAX_TM</a></td>
+    </tr>
+    <tr>
+      <td><a href="#PRIMER_INTERNAL_MAX_NS_ACCEPTED">PRIMER_INTERNAL_MAX_NS_ACCEPTED</a></td>
+      <td><a href="#PRIMER_MAX_SIZE">PRIMER_MAX_SIZE</a></td>
+      <td><a href="#PRIMER_PRODUCT_MIN_TM">PRIMER_PRODUCT_MIN_TM</a></td>
+    </tr>
+    <tr>
+      <td><a href="#PRIMER_INTERNAL_MAX_POLY_X">PRIMER_INTERNAL_MAX_POLY_X</a></td>
+      <td><a href="#PRIMER_MAX_TEMPLATE_MISPRIMING">PRIMER_MAX_TEMPLATE_MISPRIMING</a></td>
+      <td><a href="#PRIMER_PRODUCT_OPT_SIZE">PRIMER_PRODUCT_OPT_SIZE</a></td>
+    </tr>
+    <tr>
+      <td><a href="#PRIMER_INTERNAL_MAX_SELF_ANY">PRIMER_INTERNAL_MAX_SELF_ANY</a></td>
+      <td><a href="#PRIMER_MAX_TEMPLATE_MISPRIMING_TH">PRIMER_MAX_TEMPLATE_MISPRIMING_TH</a></td>
+      <td><a href="#PRIMER_PRODUCT_OPT_TM">PRIMER_PRODUCT_OPT_TM</a></td>
+    </tr>
+    <tr>
+      <td><a href="#PRIMER_INTERNAL_MAX_SELF_ANY_TH">PRIMER_INTERNAL_MAX_SELF_ANY_TH</a></td>
+      <td><a href="#PRIMER_MAX_TM">PRIMER_MAX_TM</a></td>
+      <td><a href="#PRIMER_PRODUCT_SIZE_RANGE">PRIMER_PRODUCT_SIZE_RANGE</a></td>
+    </tr>
+    <tr>
+      <td><a href="#PRIMER_INTERNAL_MAX_SELF_END">PRIMER_INTERNAL_MAX_SELF_END</a></td>
+      <td><a href="#PRIMER_MIN_3_PRIME_OVERLAP_OF_JUNCTION">PRIMER_MIN_3_PRIME_OVERLAP_OF_JUNCTION</a></td>
+      <td><a href="#PRIMER_QUALITY_RANGE_MAX">PRIMER_QUALITY_RANGE_MAX</a></td>
+    </tr>
+    <tr>
+      <td><a href="#PRIMER_INTERNAL_MAX_SELF_END_TH">PRIMER_INTERNAL_MAX_SELF_END_TH</a></td>
+      <td><a href="#PRIMER_MIN_5_PRIME_OVERLAP_OF_JUNCTION">PRIMER_MIN_5_PRIME_OVERLAP_OF_JUNCTION</a></td>
+      <td><a href="#PRIMER_QUALITY_RANGE_MIN">PRIMER_QUALITY_RANGE_MIN</a></td>
+    </tr>
+    <tr>
+      <td><a href="#PRIMER_INTERNAL_MAX_SIZE">PRIMER_INTERNAL_MAX_SIZE</a></td>
+      <td><a href="#PRIMER_MIN_END_QUALITY">PRIMER_MIN_END_QUALITY</a></td>
+      <td><a href="#PRIMER_SALT_CORRECTIONS">PRIMER_SALT_CORRECTIONS</a></td>
+    </tr>
+    <tr>
+      <td><a href="#PRIMER_INTERNAL_MAX_TM">PRIMER_INTERNAL_MAX_TM</a></td>
+      <td><a href="#PRIMER_MIN_GC">PRIMER_MIN_GC</a></td>
+      <td><a href="#PRIMER_SALT_DIVALENT">PRIMER_SALT_DIVALENT</a></td>
+    </tr>
+    <tr>
+      <td><a href="#PRIMER_INTERNAL_MIN_GC">PRIMER_INTERNAL_MIN_GC</a></td>
+      <td><a href="#PRIMER_MIN_LEFT_THREE_PRIME_DISTANCE">PRIMER_MIN_LEFT_THREE_PRIME_DISTANCE</a></td>
+      <td><a href="#PRIMER_SALT_MONOVALENT">PRIMER_SALT_MONOVALENT</a></td>
+    </tr>
+    <tr>
+      <td><a href="#PRIMER_INTERNAL_MIN_QUALITY">PRIMER_INTERNAL_MIN_QUALITY</a></td>
+      <td><a href="#PRIMER_MIN_QUALITY">PRIMER_MIN_QUALITY</a></td>
+      <td><a href="#PRIMER_SEQUENCING_ACCURACY">PRIMER_SEQUENCING_ACCURACY</a></td>
+    </tr>
+    <tr>
+      <td><a href="#PRIMER_INTERNAL_MIN_SIZE">PRIMER_INTERNAL_MIN_SIZE</a></td>
+      <td><a href="#PRIMER_MIN_RIGHT_THREE_PRIME_DISTANCE">PRIMER_MIN_RIGHT_THREE_PRIME_DISTANCE</a></td>
+      <td><a href="#PRIMER_SEQUENCING_INTERVAL">PRIMER_SEQUENCING_INTERVAL</a></td>
+    </tr>
+    <tr>
+      <td><a href="#PRIMER_INTERNAL_MIN_TM">PRIMER_INTERNAL_MIN_TM</a></td>
+      <td><a href="#PRIMER_MIN_SIZE">PRIMER_MIN_SIZE</a></td>
+      <td><a href="#PRIMER_SEQUENCING_LEAD">PRIMER_SEQUENCING_LEAD</a></td>
+    </tr>
+    <tr>
+      <td><a href="#PRIMER_INTERNAL_MISHYB_LIBRARY">PRIMER_INTERNAL_MISHYB_LIBRARY</a></td>
+      <td><a href="#PRIMER_MIN_THREE_PRIME_DISTANCE">PRIMER_MIN_THREE_PRIME_DISTANCE</a></td>
+      <td><a href="#PRIMER_SEQUENCING_SPACING">PRIMER_SEQUENCING_SPACING</a></td>
+    </tr>
+    <tr>
+      <td><a href="#PRIMER_INTERNAL_MUST_MATCH_FIVE_PRIME">PRIMER_INTERNAL_MUST_MATCH_FIVE_PRIME</a></td>
+      <td><a href="#PRIMER_MIN_TM">PRIMER_MIN_TM</a></td>
+      <td><a href="#PRIMER_TASK">PRIMER_TASK</a></td>
+    </tr>
+    <tr>
+      <td><a href="#PRIMER_INTERNAL_MUST_MATCH_THREE_PRIME">PRIMER_INTERNAL_MUST_MATCH_THREE_PRIME</a></td>
+      <td><a href="#PRIMER_MISPRIMING_LIBRARY">PRIMER_MISPRIMING_LIBRARY</a></td>
+      <td><a href="#PRIMER_THERMODYNAMIC_OLIGO_ALIGNMENT">PRIMER_THERMODYNAMIC_OLIGO_ALIGNMENT</a></td>
+    </tr>
+    <tr>
+      <td><a href="#PRIMER_INTERNAL_OPT_GC_PERCENT">PRIMER_INTERNAL_OPT_GC_PERCENT</a></td>
+      <td><a href="#PRIMER_MUST_MATCH_FIVE_PRIME">PRIMER_MUST_MATCH_FIVE_PRIME</a></td>
+      <td><a href="#PRIMER_THERMODYNAMIC_PARAMETERS_PATH">PRIMER_THERMODYNAMIC_PARAMETERS_PATH</a></td>
+    </tr>
+    <tr>
+      <td><a href="#PRIMER_INTERNAL_OPT_SIZE">PRIMER_INTERNAL_OPT_SIZE</a></td>
+      <td><a href="#PRIMER_MUST_MATCH_THREE_PRIME">PRIMER_MUST_MATCH_THREE_PRIME</a></td>
+      <td><a href="#PRIMER_THERMODYNAMIC_TEMPLATE_ALIGNMENT">PRIMER_THERMODYNAMIC_TEMPLATE_ALIGNMENT</a></td>
+    </tr>
+    <tr>
+      <td><a href="#PRIMER_INTERNAL_OPT_TM">PRIMER_INTERNAL_OPT_TM</a></td>
+      <td><a href="#PRIMER_NUM_RETURN">PRIMER_NUM_RETURN</a></td>
+      <td><a href="#PRIMER_TM_FORMULA">PRIMER_TM_FORMULA</a></td>
+    </tr>
+    <tr>
+      <td><a href="#PRIMER_INTERNAL_SALT_DIVALENT">PRIMER_INTERNAL_SALT_DIVALENT</a></td>
+      <td><a href="#PRIMER_OPT_GC_PERCENT">PRIMER_OPT_GC_PERCENT</a></td>
+      <td><a href="#PRIMER_WT_END_QUAL">PRIMER_WT_END_QUAL</a></td>
+    </tr>
+    <tr>
+      <td><a href="#PRIMER_INTERNAL_SALT_MONOVALENT">PRIMER_INTERNAL_SALT_MONOVALENT</a></td>
+      <td><a href="#PRIMER_OPT_SIZE">PRIMER_OPT_SIZE</a></td>
+      <td><a href="#PRIMER_WT_END_STABILITY">PRIMER_WT_END_STABILITY</a></td>
+    </tr>
+    <tr>
+      <td><a href="#PRIMER_INTERNAL_WT_END_QUAL">PRIMER_INTERNAL_WT_END_QUAL</a></td>
+      <td><a href="#PRIMER_OPT_TM">PRIMER_OPT_TM</a></td>
+      <td><a href="#PRIMER_WT_GC_PERCENT_GT">PRIMER_WT_GC_PERCENT_GT</a></td>
+    </tr>
+    <tr>
+      <td><a href="#PRIMER_INTERNAL_WT_GC_PERCENT_GT">PRIMER_INTERNAL_WT_GC_PERCENT_GT</a></td>
+      <td><a href="#PRIMER_OUTSIDE_PENALTY">PRIMER_OUTSIDE_PENALTY</a></td>
+      <td><a href="#PRIMER_WT_GC_PERCENT_LT">PRIMER_WT_GC_PERCENT_LT</a></td>
+    </tr>
+    <tr>
+      <td><a href="#PRIMER_INTERNAL_WT_GC_PERCENT_LT">PRIMER_INTERNAL_WT_GC_PERCENT_LT</a></td>
+      <td><a href="#PRIMER_PAIR_MAX_COMPL_ANY">PRIMER_PAIR_MAX_COMPL_ANY</a></td>
+      <td><a href="#PRIMER_WT_HAIRPIN_TH">PRIMER_WT_HAIRPIN_TH</a></td>
+    </tr>
+    <tr>
+      <td><a href="#PRIMER_INTERNAL_WT_HAIRPIN_TH">PRIMER_INTERNAL_WT_HAIRPIN_TH</a></td>
+      <td><a href="#PRIMER_PAIR_MAX_COMPL_ANY_TH">PRIMER_PAIR_MAX_COMPL_ANY_TH</a></td>
+      <td><a href="#PRIMER_WT_LIBRARY_MISPRIMING">PRIMER_WT_LIBRARY_MISPRIMING</a></td>
+    </tr>
+    <tr>
+      <td><a href="#PRIMER_INTERNAL_WT_LIBRARY_MISHYB">PRIMER_INTERNAL_WT_LIBRARY_MISHYB</a></td>
+      <td><a href="#PRIMER_PAIR_MAX_COMPL_END">PRIMER_PAIR_MAX_COMPL_END</a></td>
+      <td><a href="#PRIMER_WT_NUM_NS">PRIMER_WT_NUM_NS</a></td>
+    </tr>
+    <tr>
+      <td><a href="#PRIMER_INTERNAL_WT_NUM_NS">PRIMER_INTERNAL_WT_NUM_NS</a></td>
+      <td><a href="#PRIMER_PAIR_MAX_COMPL_END_TH">PRIMER_PAIR_MAX_COMPL_END_TH</a></td>
+      <td><a href="#PRIMER_WT_POS_PENALTY">PRIMER_WT_POS_PENALTY</a></td>
+    </tr>
+    <tr>
+      <td><a href="#PRIMER_INTERNAL_WT_SELF_ANY">PRIMER_INTERNAL_WT_SELF_ANY</a></td>
+      <td><a href="#PRIMER_PAIR_MAX_DIFF_TM">PRIMER_PAIR_MAX_DIFF_TM</a></td>
+      <td><a href="#PRIMER_WT_SELF_ANY">PRIMER_WT_SELF_ANY</a></td>
+    </tr>
+    <tr>
+      <td><a href="#PRIMER_INTERNAL_WT_SELF_ANY_TH">PRIMER_INTERNAL_WT_SELF_ANY_TH</a></td>
+      <td><a href="#PRIMER_PAIR_MAX_LIBRARY_MISPRIMING">PRIMER_PAIR_MAX_LIBRARY_MISPRIMING</a></td>
+      <td><a href="#PRIMER_WT_SELF_ANY_TH">PRIMER_WT_SELF_ANY_TH</a></td>
+    </tr>
+    <tr>
+      <td><a href="#PRIMER_INTERNAL_WT_SELF_END">PRIMER_INTERNAL_WT_SELF_END</a></td>
+      <td><a href="#PRIMER_PAIR_MAX_TEMPLATE_MISPRIMING">PRIMER_PAIR_MAX_TEMPLATE_MISPRIMING</a></td>
+      <td><a href="#PRIMER_WT_SELF_END">PRIMER_WT_SELF_END</a></td>
+    </tr>
+    <tr>
+      <td><a href="#PRIMER_INTERNAL_WT_SELF_END_TH">PRIMER_INTERNAL_WT_SELF_END_TH</a></td>
+      <td><a href="#PRIMER_PAIR_MAX_TEMPLATE_MISPRIMING_TH">PRIMER_PAIR_MAX_TEMPLATE_MISPRIMING_TH</a></td>
+      <td><a href="#PRIMER_WT_SELF_END_TH">PRIMER_WT_SELF_END_TH</a></td>
+    </tr>
+    <tr>
+      <td><a href="#PRIMER_INTERNAL_WT_SEQ_QUAL">PRIMER_INTERNAL_WT_SEQ_QUAL</a></td>
+      <td><a href="#PRIMER_PAIR_WT_COMPL_ANY">PRIMER_PAIR_WT_COMPL_ANY</a></td>
+      <td><a href="#PRIMER_WT_SEQ_QUAL">PRIMER_WT_SEQ_QUAL</a></td>
+    </tr>
+    <tr>
+      <td><a href="#PRIMER_INTERNAL_WT_SIZE_GT">PRIMER_INTERNAL_WT_SIZE_GT</a></td>
+      <td><a href="#PRIMER_PAIR_WT_COMPL_ANY_TH">PRIMER_PAIR_WT_COMPL_ANY_TH</a></td>
+      <td><a href="#PRIMER_WT_SIZE_GT">PRIMER_WT_SIZE_GT</a></td>
+    </tr>
+    <tr>
+      <td><a href="#PRIMER_INTERNAL_WT_SIZE_LT">PRIMER_INTERNAL_WT_SIZE_LT</a></td>
+      <td><a href="#PRIMER_PAIR_WT_COMPL_END">PRIMER_PAIR_WT_COMPL_END</a></td>
+      <td><a href="#PRIMER_WT_SIZE_LT">PRIMER_WT_SIZE_LT</a></td>
+    </tr>
+    <tr>
+      <td><a href="#PRIMER_INTERNAL_WT_TM_GT">PRIMER_INTERNAL_WT_TM_GT</a></td>
+      <td><a href="#PRIMER_PAIR_WT_COMPL_END_TH">PRIMER_PAIR_WT_COMPL_END_TH</a></td>
+      <td><a href="#PRIMER_WT_TEMPLATE_MISPRIMING">PRIMER_WT_TEMPLATE_MISPRIMING</a></td>
+    </tr>
+    <tr>
+      <td><a href="#PRIMER_INTERNAL_WT_TM_LT">PRIMER_INTERNAL_WT_TM_LT</a></td>
+      <td><a href="#PRIMER_PAIR_WT_DIFF_TM">PRIMER_PAIR_WT_DIFF_TM</a></td>
+      <td><a href="#PRIMER_WT_TEMPLATE_MISPRIMING_TH">PRIMER_WT_TEMPLATE_MISPRIMING_TH</a></td>
+    </tr>
+    <tr>
+      <td><a href="#PRIMER_LIBERAL_BASE">PRIMER_LIBERAL_BASE</a></td>
+      <td><a href="#PRIMER_PAIR_WT_IO_PENALTY">PRIMER_PAIR_WT_IO_PENALTY</a></td>
+      <td><a href="#PRIMER_WT_TM_GT">PRIMER_WT_TM_GT</a></td>
+    </tr>
+    <tr>
+      <td><a href="#PRIMER_LIB_AMBIGUITY_CODES_CONSENSUS">PRIMER_LIB_AMBIGUITY_CODES_CONSENSUS</a></td>
+      <td><a href="#PRIMER_PAIR_WT_LIBRARY_MISPRIMING">PRIMER_PAIR_WT_LIBRARY_MISPRIMING</a></td>
+      <td><a href="#PRIMER_WT_TM_LT">PRIMER_WT_TM_LT</a></td>
+    </tr>
+    <tr>
+      <td><a href="#PRIMER_LOWERCASE_MASKING">PRIMER_LOWERCASE_MASKING</a></td>
+      <td><a href="#PRIMER_PAIR_WT_PRODUCT_SIZE_GT">PRIMER_PAIR_WT_PRODUCT_SIZE_GT</a></td>
+      <td>&nbsp;</td>
+    </tr>
 </table>
 <h3><a name="PRIMER_TASK">PRIMER_TASK (string; default generic)</a></h3>
 
@@ -2218,7 +2218,7 @@ version of primer3).<br>
 <br>
 This backward compatible calculation uses the table of
 thermodynamic parameters in the paper [Breslauer KJ, Frank R,
-Blöcker H and Marky LA (1986) "Predicting DNA duplex stability
+BlÃ¶cker H and Marky LA (1986) "Predicting DNA duplex stability
 from the base sequence" Proc Natl Acad Sci 83:4746-50
 <a href="http://dx.doi.org/10.1073/pnas.83.11.3746">http://dx.doi.org/10.1073/pnas.83.11.3746</a>],
 and the method in the paper [Rychlik W, Spencer WJ and Rhoads
@@ -2378,7 +2378,7 @@ in the paper [Owczarzy, R., Moreira, B.G., You, Y., Behlke, M.A., and
 Walder, J.A. (2008). Predicting stability of DNA duplexes in solutions
 containing magnesium and monovalent cations. Biochemistry 47, 5336-5353
 <a href="http://dx.doi.org/10.1021/bi702363u">http://dx.doi.org/10.1021/bi702363u</a>] following recommendations in the paper
-[Ahsen, v.N., Wittwer, C.T., and Schütz, E. (2010). Monovalent and divalent
+[Ahsen, v.N., Wittwer, C.T., and SchÃ¼tz, E. (2010). Monovalent and divalent
 salt correction algorithms for Tm prediction-recommendations for Primer3
 usage. Brief Bioinform 12, 514 <a href="http://dx.doi.org/10.1093/bib/bbq081">http://dx.doi.org/10.1093/bib/bbq081</a>]. 
 <br>
@@ -2490,10 +2490,10 @@ oligos.</p>
 <h3><a name="PRIMER_MAX_SELF_ANY_TH">PRIMER_MAX_SELF_ANY_TH (decimal, 9999,99; default 47.00)</a></h3>
 
 <p> The same as PRIMER_MAX_SELF_ANY but all calculations are based on
-	  thermodynamical approach. The melting temperature of the most stable
-	  structure is calculated. To calculate secondary structures nearest-neighbor
-	  parameters for perfect matches, single internal mismatches, terminal
-	  mismatches, dangling ends have been used. Also parameters for
+    thermodynamical approach. The melting temperature of the most stable
+    structure is calculated. To calculate secondary structures nearest-neighbor
+    parameters for perfect matches, single internal mismatches, terminal
+    mismatches, dangling ends have been used. Also parameters for
 increments for length dependence of
 bulge and internal loops have been used. This parameter is calculated only
 if PRIMER_THERMODYNAMIC_OLIGO_ALIGNMENT=1. The default value is 10 degrees
@@ -2557,7 +2557,7 @@ medium for use therein" World Intellectual Property Organization, WO 01/94611
 <p><br>
 Predicting secondary structures can improve primer design by eliminating
 sequences with high possibility to form alternative secondary structures.
-	  </p>
+    </p>
 
 
 <h3><a name="PRIMER_INTERNAL_MAX_SELF_ANY">PRIMER_INTERNAL_MAX_SELF_ANY (decimal, 9999.99; default 12.00)</a></h3>
@@ -2780,7 +2780,7 @@ For example if the table of thermodynamic parameters suggested
 by <a href="http://dx.doi.org/10.1073/pnas.95.4.1460">SantaLucia 1998, DOI:10.1073/pnas.95.4.1460</a> is used the deltaG 
 values for the most stable and for the most labile 5mer duplex 
 are 6.86 kcal/mol (GCGCG) and 0.86 kcal/mol (TATAT) respectively.<br>
-<br>	
+<br>  
 If the table of thermodynamic parameters suggested by 
 <a href="http://dx.doi.org/10.1073/pnas.83.11.3746">Breslauer et al. 1986, 10.1073/pnas.83.11.3746</a> is used the deltaG 
 values for the most stable and for the most labile 5mer are 
@@ -3386,7 +3386,7 @@ primer, it is calculated like that:</p>
 
    If the primer does not overlap a target then
        this is added (+):
-	
+  
        + <a href="#PRIMER_WT_POS_PENALTY">PRIMER_WT_POS_PENALTY</a> * <a href="#PRIMER_LEFT_4_POSITION_PENALTY">PRIMER_LEFT_4_POSITION_PENALTY</a>
 
 
@@ -3644,7 +3644,7 @@ primer, it is calculated like that:</p>
         (1/(<a href="#PRIMER_INTERNAL_4_TM">PRIMER_INTERNAL_4_TM</a> - 5 + 1 - <a href="#PRIMER_INTERNAL_4_HAIRPIN_TH">PRIMER_INTERNAL_4_HAIRPIN_TH</a>));
 </i>
 </pre>
-<p>	
+<p> 
 The primers are then sorted by penalty and primer3 tries to pick 
 the primers with the lowest penalty. For the <a href="#PRIMER_TASK">PRIMER_TASK</a>
 <tt><i>pick_primer_list</i></tt> or <tt><i>pick_sequencing_primers</i></tt> the selection ends at 
@@ -3663,7 +3663,7 @@ this point. If primer pairs have to be selected, a
    If internal oligo is picked then this is added (+):
 
        + <a href="#PRIMER_PAIR_WT_IO_PENALTY">PRIMER_PAIR_WT_IO_PENALTY</a> * <a href="#PRIMER_INTERNAL_4_PENALTY">PRIMER_INTERNAL_4_PENALTY</a>
-	
+  
 
    If <a href="#PRIMER_PAIR_4_PRODUCT_TM">PRIMER_PAIR_4_PRODUCT_TM</a> &gt; <a href="#PRIMER_PRODUCT_OPT_TM">PRIMER_PRODUCT_OPT_TM</a> then
        this is added (+):
